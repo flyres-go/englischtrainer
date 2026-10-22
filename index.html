@@ -1,6 +1,50 @@
 <!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#14243d"><meta name="apple-mobile-web-app-capable" content="yes"><title>Werkstatt · Englischtrainer</title><style>
 :root{color-scheme:light;--bg:#f2f5f9;--ink:#14243d;--muted:#607086;--card:#fff;--line:#dbe3ec;--blue:#3478DC;--red:#E45A48;--green:#23A36D;--purple:#9860CB;--orange:#D18B20}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--ink)}main{max-width:740px;margin:auto;padding:18px 16px 60px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}h1{font-size:22px;margin:0}small,.muted{color:var(--muted)}.pill{background:#dcebe4;color:#196443;border-radius:20px;padding:6px 10px;font-size:12px;font-weight:700}.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;margin:12px 0;box-shadow:0 4px 16px #152c4210}.seg{display:grid;grid-template-columns:1fr 1fr;background:#e7edf4;border-radius:13px;padding:4px;gap:4px}.seg button{border:0;background:transparent;border-radius:10px;color:var(--ink);padding:13px;font-size:15px;font-weight:650}.seg button.active{background:#fff;box-shadow:0 1px 7px #172c4220}.top{display:flex;justify-content:space-between;gap:8px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}.de{font-size:clamp(22px,5.2vw,31px);line-height:1.45;font-weight:700;text-align:center;margin:22px 0}.en{font-size:clamp(21px,5vw,29px);line-height:1.55;text-align:center;font-weight:650;margin:16px 0}.s{color:var(--blue)}.v{color:var(--red)}.o{color:var(--green)}.p{color:var(--purple)}.t{color:var(--orange)}.answer{border-top:1px solid var(--line);padding-top:18px;margin-top:20px}.hidden{display:none!important}.hint{text-align:center;color:var(--muted);padding:15px 0}.status{text-align:center;font-size:14px;color:var(--muted);margin:10px 0;min-height:24px}.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}.buttons button,.wide{border:1px solid var(--line);border-radius:12px;padding:14px 8px;background:white;color:var(--ink);font-size:15px;font-weight:650}.buttons button.primary,.wide.primary{background:#1b63ca;color:white;border-color:#1b63ca}.buttons button:disabled{opacity:.4}.wide{width:100%;margin-top:8px}.grammar{border-top:1px solid var(--line);margin-top:18px;padding-top:15px;font-size:15px;line-height:1.6}.grammar-title{font-size:18px;font-weight:750;margin-bottom:10px}.legend{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.legend span{font-size:12px;border:1px solid currentColor;border-radius:7px;padding:2px 6px;font-weight:650}.pattern{font-size:14px;margin:9px 0}.grammar-tip{margin-top:8px;color:#526378}.settings{display:grid;gap:15px}.setting{display:grid;gap:7px}.setting label{display:flex;justify-content:space-between;font-size:14px;font-weight:650}.setting input[type=range]{width:100%;accent-color:#1b63ca}.check{display:flex;align-items:center;gap:9px;font-size:14px}.check input{width:18px;height:18px;accent-color:#1b63ca}.note{font-size:12px;color:var(--muted);line-height:1.55}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#a1aebb;margin-right:6px}.dot.on{background:#20a474}.footer{font-size:12px;color:var(--muted);line-height:1.5}.voicecommands{font-size:13px;line-height:1.65;color:var(--muted)}button{cursor:pointer;touch-action:manipulation}button:focus-visible{outline:3px solid #74a8f8;outline-offset:2px}@media(max-width:420px){main{padding:14px 11px 35px}.panel{padding:15px}.buttons button{font-size:14px;padding:13px 4px}}
-</style></head><body><main><header><div><div class="eyebrow">DEUTSCH → BRITISCHES ENGLISCH</div><h1>Werkstatt · Englischtrainer</h1></div><span class="pill">38 Karten · v1.4</span></header>
+
+/* v1.5: compact landscape learning mode; portrait remains unchanged. */
+@media (orientation:landscape) and (max-height:650px){
+ main{max-width:100%;padding:5px 12px 14px}
+ header{margin:0 0 4px;min-height:26px}
+ header .eyebrow{display:none}
+ h1{font-size:15px;line-height:1.2}
+ .pill{font-size:10px;padding:3px 8px}
+ .seg{max-width:600px;margin:0 auto;padding:2px;gap:2px}
+ .seg button{font-size:12px;padding:6px}
+ .panel{margin:5px 0;padding:9px 14px;border-radius:13px}
+ .top .eyebrow{font-size:9px;letter-spacing:.08em}
+ .de{font-size:clamp(17px,2.5vw,25px);line-height:1.22;margin:12px 0}
+ .hint{font-size:12px;padding:4px 0}
+ .status{font-size:11px;min-height:14px;margin:3px 0}
+ .buttons{max-width:850px;margin:4px auto;gap:5px}
+ .buttons button{padding:7px 5px;font-size:12px;border-radius:8px}
+ .answer{margin-top:5px;padding-top:4px}
+ .answer>.eyebrow{display:none}
+ .en{font-size:clamp(18px,2.5vw,28px);line-height:1.2;margin:4px 0 6px}
+ .grammar{font-size:clamp(11px,1.25vw,14px);line-height:1.27;margin-top:6px;padding-top:6px}
+ .grammar-title{font-size:clamp(13px,1.5vw,17px);margin-bottom:2px}
+ .legend{display:none}
+ .pattern{font-size:inherit;margin:3px 0}
+ .grammar-tip{margin-top:3px}
+ .grammar p{margin:3px 0}
+ .panel:has(.settings){display:none}
+ body.phase-answer #german{display:none}
+ body.phase-answer #thinking{display:none}
+ body.phase-answer .answer{border-top:0;margin-top:0;padding-top:0}
+ body.phase-answer .panel:has(#german){padding-top:7px;padding-bottom:5px}
+ body.phase-answer .buttons:nth-of-type(2){display:none}
+}
+@media (orientation:landscape) and (max-height:420px){
+ header{margin-bottom:2px}h1{font-size:13px}
+ .seg button{padding:4px;font-size:11px}
+ .panel{padding:6px 10px;margin:3px 0}
+ .de{font-size:19px;margin:6px 0}
+ .en{font-size:clamp(17px,2.3vw,24px);margin:2px 0 4px}
+ .grammar{font-size:clamp(10px,1.15vw,13px);line-height:1.2}
+ .grammar-title{font-size:13px}
+ .status{margin:1px 0}
+ .buttons button{padding:5px 3px}
+}
+</style></head><body><main><header><div><div class="eyebrow">DEUTSCH → BRITISCHES ENGLISCH</div><h1>Werkstatt · Englischtrainer</h1></div><span class="pill">38 Karten · v1.5</span></header>
 <div class="seg"><button id="autoMode" class="active">▶ Automatisch</button><button id="manualMode">☝ Manuell</button></div>
 <section class="panel"><div class="top"><span class="eyebrow" id="position">Karte 1 / 37</span><span class="eyebrow" id="phase">Bereit</span></div><div class="de" id="german"></div><div class="hint" id="thinking">Drücke Start, um die Übung zu beginnen.</div><div class="answer hidden" id="answer"><div class="eyebrow" style="text-align:center">ENGLISCH · SVOPT</div><div class="en" id="english"></div><div class="grammar" id="grammar"></div></div><div class="status"><span class="dot" id="micDot"></span><span id="status">Bereit</span></div></section>
 <div class="buttons"><button id="prev">← Zurück</button><button id="play" class="primary">▶ Start</button><button id="next">Weiter →</button></div><div class="buttons"><button id="repeat">↻ Wiederholen</button><button id="solution">Lösung</button><button id="mute">🔊 Ton an</button></div>
@@ -10,7 +54,7 @@ const $=id=>document.getElementById(id);let mode='auto',running=false,muted=fals
 try{Object.assign(settings,JSON.parse(localStorage.getItem('trainer-settings')||'{}'))}catch(e){};
 function save(){try{localStorage.setItem('trainer-settings',JSON.stringify(settings))}catch(e){}};
 function shuffle(){queue=CARDS.map((_,i)=>i);if(settings.random){for(let i=queue.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[queue[i],queue[j]]=[queue[j],queue[i]]}}else{queue=queue.slice(index+1).concat(queue.slice(0,index+1))}if(queue.length>1&&queue[0]===index){queue.push(queue.shift())}}
-function draw(){const c=CARDS[index];$('german').textContent=c.de;$('english').innerHTML=c.colored;$('grammar').innerHTML=c.grammar;$('position').textContent='Karte '+(index+1)+' / '+CARDS.length;$('answer').classList.toggle('hidden',phase!=='answer');$('thinking').classList.toggle('hidden',phase==='answer');$('phase').textContent={ready:'Bereit',question:'Deutscher Satz',think:'Denkpause',answer:'Englische Lösung',paused:'Angehalten'}[phase]||phase;let labels={ready:'Drücke Start, um die Übung zu beginnen.',question:'Bitte zuhören …',think:'Überlege dir die Übersetzung.',paused:'Pausiert – mit Weiter fortsetzen.'};$('thinking').textContent=labels[phase]||'';$('play').textContent=running?'⏸ Stopp':'▶ '+(phase==='ready'?'Start':'Weiter');$('autoMode').classList.toggle('active',mode==='auto');$('manualMode').classList.toggle('active',mode==='manual');$('micDot').classList.toggle('on',listening);$('mute').textContent=muted?'🔇 Ton aus':'🔊 Ton an'}
+function draw(){document.body.classList.toggle('phase-answer',phase==='answer');const c=CARDS[index];$('german').textContent=c.de;$('english').innerHTML=c.colored;$('grammar').innerHTML=c.grammar;$('position').textContent='Karte '+(index+1)+' / '+CARDS.length;$('answer').classList.toggle('hidden',phase!=='answer');$('thinking').classList.toggle('hidden',phase==='answer');$('phase').textContent={ready:'Bereit',question:'Deutscher Satz',think:'Denkpause',answer:'Englische Lösung',paused:'Angehalten'}[phase]||phase;let labels={ready:'Drücke Start, um die Übung zu beginnen.',question:'Bitte zuhören …',think:'Überlege dir die Übersetzung.',paused:'Pausiert – mit Weiter fortsetzen.'};$('thinking').textContent=labels[phase]||'';$('play').textContent=running?'⏸ Stopp':'▶ '+(phase==='ready'?'Start':'Weiter');$('autoMode').classList.toggle('active',mode==='auto');$('manualMode').classList.toggle('active',mode==='manual');$('micDot').classList.toggle('on',listening);$('mute').textContent=muted?'🔇 Ton aus':'🔊 Ton an'}
 function status(s){$('status').textContent=s}
 function micStatus(s){$('micState').textContent='🎙️ '+s}
 function clearTimers(){if(tick){clearInterval(tick);tick=null}if(nextTimer){clearTimeout(nextTimer);nextTimer=null}}
@@ -32,7 +76,7 @@ function speak(text,lang,rate,done){if(muted||!synth||!window.SpeechSynthesisUtt
 function startQuestion(){interrupt();running=true;phase='question';draw();status('Deutscher Satz wird vorgelesen');speak(CARDS[index].de,'de-DE',1,()=>{if(!running||phase!=='question')return;startThink()})}
 function startThink(){phase='think';remaining=settings.delay;draw();status('Denkpause: '+remaining+' s');if(settings.voice)startRecognition();if(mode==='auto')tick=setInterval(()=>{if(!running||phase!=='think')return;remaining--;status('Denkpause: '+remaining+' s');if(remaining<=0){clearTimers();showAnswer()}},1000);else status('Manuell – „Lösung“ oder „Weiter“ drücken')}
 let answerSpeechDone=false;
-function showAnswer(){clearTimers();stopRecognition();stopAudio();answerSpeechDone=false;phase='answer';running=true;draw();status('Englische Lösung – Mikrofon während der Sprachausgabe pausiert');speak(CARDS[index].en,'en-GB',settings.speed/100,()=>{if(!running||phase!=='answer')return;answerSpeechDone=true;listenAfterSpeech();if(mode==='auto'){status('Nächste Karte in '+settings.answerTime+' s – Sprachbefehle aktiv');nextTimer=setTimeout(()=>nextCard(),settings.answerTime*1000)}else status('Manuell – „Weiter“ oder „Wiederholen“ sagen')})}
+function showAnswer(){clearTimers();stopRecognition();stopAudio();answerSpeechDone=false;phase='answer';running=true;draw();if(matchMedia('(orientation:landscape)').matches)window.scrollTo({top:0,behavior:'instant'});status('Englische Lösung – Mikrofon während der Sprachausgabe pausiert');speak(CARDS[index].en,'en-GB',settings.speed/100,()=>{if(!running||phase!=='answer')return;answerSpeechDone=true;listenAfterSpeech();if(mode==='auto'){status('Nächste Karte in '+settings.answerTime+' s – Sprachbefehle aktiv');nextTimer=setTimeout(()=>nextCard(),settings.answerTime*1000)}else status('Manuell – „Weiter“ oder „Wiederholen“ sagen')})}
 
 function nextCard(){interrupt();history.push(index);if(history.length>100)history.shift();if(!queue.length)shuffle();index=queue.shift();phase='ready';draw();if(running)startQuestion();else status('Bereit')}
 function prevCard(){interrupt();if(history.length){queue.unshift(index);index=history.pop()}phase='ready';draw();if(running)startQuestion();else status('Bereit')}
